@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nail Studio — Маникюр премиум-класса</title>
+<title>Botanical Nail Studio — Маникюр с заботой</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +14,13 @@
 <!-- ===== ХЕДЕР ===== -->
 <header id="header">
   <div class="container nav">
-    <a href="#" class="logo">NAIL<span>·</span>STUDIO</a>
+    <a href="#" class="logo">
+      <svg class="logo-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+      </svg>
+      Botanical<span>·</span>Nail
+    </a>
     <ul class="nav-links">
       <li><a href="#works">Работы</a></li>
       <li><a href="#price">Прайс</a></li>
@@ -28,10 +37,19 @@
 
 <!-- ===== ГЕРОЙ ===== -->
 <section class="hero">
+  <div class="hero-leaf hero-leaf--1"></div>
+  <div class="hero-leaf hero-leaf--2"></div>
   <div class="container hero-content">
     <div class="hero-text">
-      <h1>Идеальный маникюр <span>премиум-класса</span></h1>
-      <p>Современные техники, стерильность и безупречный результат. Запишитесь на процедуру и подчеркните свою индивидуальность.</p>
+      <span class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C7 7 7 12 12 17c5-5 5-10 0-15Z"/>
+          <path d="M12 17v5"/>
+        </svg>
+        Натуральный уход · Стерильность
+      </span>
+      <h1>Маникюр <em>с заботой</em> о ваших руках</h1>
+      <p>Мягкие оттенки, натуральные материалы, внимание к деталям. Создаём маникюр, который подчёркивает естественную красоту.</p>
       <div class="hero-cta">
         <a href="tel:+79000000000" class="call-btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -43,7 +61,6 @@
       </div>
     </div>
     <div class="hero-visual">
-      <!-- МЕСТО ДЛЯ ГЛАВНОГО ФОТО (замените на <img>) -->
       <div class="hero-card">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <rect x="3" y="3" width="18" height="18" rx="4"/>
@@ -52,12 +69,18 @@
         </svg>
         <p>Фото мастера</p>
       </div>
+      <div class="hero-decoration">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+        </svg>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ===== ГАЛЕРЕЯ РАБОТ ===== -->
-<section id="works">
+<section id="works" class="works-section">
   <div class="container">
     <div class="section-head">
       <span class="tag">Портфолио</span>
@@ -65,7 +88,6 @@
       <p>Каждый дизайн создаётся с вниманием к деталям</p>
     </div>
     <div class="gallery">
-      <!-- Для вставки фото: <img src="work1.jpg" alt="Работа"> -->
       <div class="gallery-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/>
@@ -164,9 +186,13 @@
 <!-- ===== ФУТЕР / КОНТАКТЫ ===== -->
 <footer id="contacts">
   <div class="container">
+    <svg class="footer-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+      <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+    </svg>
     <h2>Запишитесь на маникюр</h2>
     <p>Свободные окна — уточняйте по телефону</p>
-    <a href="tel:+79000000000" class="call-btn">
+    <a href="tel:+79000000000" class="call-btn call-btn--light">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
       </svg>
@@ -175,13 +201,12 @@
     <div class="footer-info">
       <span>📍 г. Москва, ул. Примерная, 10</span>
       <span>🕐 Ежедневно 10:00 – 21:00</span>
-      <span>📸 <a href="https://instagram.com" target="_blank">@nail_studio</a></span>
+      <span>📸 <a href="https://instagram.com" target="_blank">@botanical_nail</a></span>
     </div>
-    <div class="copyright">© 2025 Nail Studio. Все права защищены.</div>
+    <div class="copyright">© 2025 Botanical Nail Studio. Все права защищены.</div>
   </div>
 </footer>
 
-<!-- Плавающая кнопка звонка для мобильных -->
 <a href="tel:+79000000000" class="call-btn floating-call">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
