@@ -525,3 +525,38 @@ footer .call-btn { margin-bottom: 44px; }
   header .call-btn svg { width: 16px; height: 16px; }
   footer h2 { font-size: 2rem; }
 }
+/* ===== НОВЫЕ СТИЛИ ДЛЯ КНОПОК В ШАПКЕ ===== */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-btn-book {
+  padding: 12px 20px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .nav-actions {
+    gap: 8px;
+  }
+  .nav-btn-book {
+    padding: 10px 14px;
+    font-size: 0.8rem;
+  }
+  header .call-btn {
+    padding: 10px 16px;
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-btn-book {
+    display: none; /* скрываем в шапке на телефоне */
+  }
+  .nav-actions {
+    gap: 0;
+  }
+}
