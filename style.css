@@ -2,7 +2,6 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  /* Зелёная палитра */
   --mint: #c8e6d4;
   --mint-light: #e8f3ec;
   --sage: #8fbfa0;
@@ -10,7 +9,6 @@
   --emerald-dark: #1b5542;
   --emerald-deep: #123d2f;
 
-  /* Нейтральные */
   --cream: #f4faf6;
   --white: #ffffff;
   --dark: #1f2d26;
@@ -72,17 +70,9 @@ header.scrolled {
   text-decoration: none;
 }
 .logo span { color: var(--sage); }
-.logo-leaf {
-  width: 26px;
-  height: 26px;
-  color: var(--emerald);
-}
+.logo-leaf { width: 26px; height: 26px; color: var(--emerald); }
 
-.nav-links {
-  display: flex;
-  gap: 36px;
-  list-style: none;
-}
+.nav-links { display: flex; gap: 36px; list-style: none; }
 .nav-links a {
   text-decoration: none;
   color: var(--dark);
@@ -127,7 +117,6 @@ header.scrolled {
 }
 .call-btn svg { width: 18px; height: 18px; }
 
-/* Светлая кнопка для футера */
 .call-btn--light {
   background: var(--mint);
   color: var(--emerald-deep);
@@ -138,7 +127,6 @@ header.scrolled {
   color: var(--emerald-dark);
 }
 
-/* Плавающая кнопка */
 .floating-call {
   position: fixed;
   bottom: 24px;
@@ -159,7 +147,6 @@ header.scrolled {
     radial-gradient(ellipse 50% 50% at 5% 90%, rgba(143, 191, 160, 0.18), transparent 60%);
 }
 
-/* Декоративные листья */
 .hero-leaf {
   position: absolute;
   pointer-events: none;
@@ -225,7 +212,6 @@ header.scrolled {
   color: var(--emerald);
   font-weight: 600;
 }
-
 .hero-text p {
   font-size: 1.1rem;
   color: var(--gray);
@@ -345,7 +331,7 @@ section { padding: 110px 0; position: relative; }
   font-size: 1.05rem;
 }
 
-/* ===== ГАЛЕРЕЯ РАБОТ ===== */
+/* ===== ГАЛЕРЕЯ ===== */
 .works-section {
   background: linear-gradient(180deg, var(--cream), var(--mint-light));
 }
@@ -407,7 +393,6 @@ section { padding: 110px 0; position: relative; }
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--mint), transparent);
 }
-
 .price-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -503,11 +488,7 @@ footer .call-btn { margin-bottom: 44px; }
   font-size: 0.95rem;
   color: rgba(255,255,255,0.75);
 }
-.footer-info a {
-  color: var(--mint);
-  text-decoration: none;
-  transition: 0.3s;
-}
+.footer-info a { color: var(--mint); text-decoration: none; transition: 0.3s; }
 .footer-info a:hover { color: var(--white); }
 
 .copyright {
